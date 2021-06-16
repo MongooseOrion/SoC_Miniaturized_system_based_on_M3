@@ -1,0 +1,26 @@
+Dependencies for Project 'project', Target 'xc7z015': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (..\application\main.c)(0x60C499DD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/DS_CM3-I./RTE/_xc7z015-IC:/Users/smn90/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/smn90/AppData/Local/Arm/Packs/Keil/V2M-MPS2_DSx_BSP/1.1.0/Device/DS_CM3/Include-D__UVISION_VERSION="533" -D_RTE_ -DDS_CM3 -D_RTE_-o ./objects/main.o -MD)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include\DS_CM3.h)(0x59128372)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include\system_DS_CM3.h)(0x59128372)
+F (RTE\Device\DS_CM3\RTE_Device.h)(0x59128372)()
+F (RTE\Device\DS_CM3\startup_DS_CM3.s)(0x59128372)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3-I./RTE/Device/DS_CM3-I./RTE/_xc7z015-IC:/Users/smn90/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/smn90/AppData/Local/Arm/Packs/Keil/V2M-MPS2_DSx_BSP/1.1.0/Device/DS_CM3/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 533" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"DS_CM3 SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_ds_cm3.o)
+F (RTE\Device\DS_CM3\system_DS_CM3.c)(0x59128372)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/DS_CM3-I./RTE/_xc7z015-IC:/Users/smn90/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/smn90/AppData/Local/Arm/Packs/Keil/V2M-MPS2_DSx_BSP/1.1.0/Device/DS_CM3/Include-D__UVISION_VERSION="533" -D_RTE_ -DDS_CM3 -D_RTE_-o ./objects/system_ds_cm3.o -MD)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include\DS_CM3.h)(0x59128372)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8ED122)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8ED122)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5EE12742)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5F268738)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
+I (C:\Users\smn90\AppData\Local\Arm\Packs\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include\system_DS_CM3.h)(0x59128372)

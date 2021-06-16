@@ -1,0 +1,248 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/cortex-M3/CortexM3 designstart FPGA'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:tri_io_buf:1.0'. The one found in IP location 'd:/work/cortex-M3/CortexM3 designstart FPGA/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/sources_1/bd/mref/tri_io_buf' will take precedence over the same IP in location d:/work/cortex-M3/CortexM3 designstart FPGA/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_future_version_chageable/m3_future_version_chageable.srcs/sources_1/bd/mref/tri_io_buf
+Command: link_design -top design_1_wrapper -part xc7a15tcsg324-3
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a15tcsg324-3
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_CORTEXM3_AXI_0_0/design_1_CORTEXM3_AXI_0_0.dcp' for cell 'design_1_i/CORTEXM3_AXI_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_swdio_tri_buffer_1_0/design_1_swdio_tri_buffer_1_0.dcp' for cell 'design_1_i/swdio_tri_buffer_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/axi_interconnect_0/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 750.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 459 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_i' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_i' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_i' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_o' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_o' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/swdio_tri_buffer_1/swd_o' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_CORTEXM3_AXI_0_0/design_1_CORTEXM3_AXI_0_0.xdc] for cell 'design_1_i/CORTEXM3_AXI_0/inst'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_CORTEXM3_AXI_0_0/design_1_CORTEXM3_AXI_0_0.xdc] for cell 'design_1_i/CORTEXM3_AXI_0/inst'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1425.496 ; gain = 544.605
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [C:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/constrs_1/new/sys_project1.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port swd_io_0 can not be placed on PACKAGE_PIN V11 because the PACKAGE_PIN is occupied by port GPIO_0_tri_o[15] [C:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/constrs_1/new/sys_project1.xdc:39]
+Finished Parsing XDC File [C:/Users/smn90/SoC_subsystem/SoC_subsystem.srcs/constrs_1/new/sys_project1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1425.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+21 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1425.496 ; gain = 995.504
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a15t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.839 . Memory (MB): peak = 1425.496 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 11be4a15c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.568 . Memory (MB): peak = 1440.477 ; gain = 14.980
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16e0a9dd7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.993 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 121 cells and removed 176 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 1877ff16f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 140 cells and removed 441 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1d309ccff
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 16 cells and removed 635 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG SWCLKTCK_0_IBUF_BUFG_inst to drive 372 load(s) on clock net SWCLKTCK_0_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 1a09e560e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1a09e560e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 13ff180c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1625.434 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             121  |             176  |                                              1  |
+|  Constant propagation         |             140  |             441  |                                              0  |
+|  Sweep                        |              16  |             635  |                                              0  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1625.434 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1c24dfcbf
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1625.434 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=5.809 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 1c24dfcbf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1824.344 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1c24dfcbf
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1824.344 ; gain = 198.910
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1c24dfcbf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1824.344 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1824.344 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1c24dfcbf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1824.344 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1824.344 ; gain = 398.848
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1824.344 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1824.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/smn90/SoC_subsystem/SoC_subsystem.runs/impl_3/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/smn90/SoC_subsystem/SoC_subsystem.runs/impl_3/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a15t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC UTLZ-1] Resource utilization: LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 11173 of such cell types but only 10400 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+ERROR: [DRC UTLZ-1] Resource utilization: Slice LUTs over-utilized in Top Level Design (This design requires more Slice LUTs cells than are available in the target device. This design requires 11210 of such cell types but only 10400 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0 has an input control pin design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/genblk3[1].ram_block_reg_0/ADDRARDADDR[14] (net: design_1_i/CORTEXM3_AXI_0/inst/u_x_dtcm/ADDRARDADDR[11]) which is driven by a register (design_1_i/CORTEXM3_AXI_0/inst/u_CORTEXM3INTEGRATION/uCORTEXM3/u_cm3_dpu/u_cm3_dpu_lsu/u_cm3_dpu_lsu_ahbintf/addr_adder_in1_ex_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 2 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 28 Warnings, 1 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 13 16:37:42 2021...
