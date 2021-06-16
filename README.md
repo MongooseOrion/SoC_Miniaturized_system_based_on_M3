@@ -11,4 +11,4 @@ This project realizes the cyclic lighting operation of LED0, by using ARM Keil5 
 4. AXI bus
 5. GPIO(15:0)
 
-I have already constrainted the pins.(Nexys4-DDR)
+By the way, I have already constrainted the pins.(Nexys4-DDR)
